@@ -1,0 +1,87 @@
+# 💣 Ultimate Nuclear Stress Tester - Enhanced Edition
+
+**Version 4.0** | **2025-04-28**
+
+## Description
+
+The **Ultimate Nuclear Stress Tester** is a powerful and highly customizable HTTP load testing tool for developers and DevOps professionals. This script leverages the power of **Vegeta**, a versatile HTTP load testing library, and combines it with a user-friendly Bash interface to provide dynamic stress testing capabilities.
+
+With an intuitive menu system, colorful interface, and robust reporting features, this tool is designed to help you analyze the performance and scalability of your web applications or APIs.
+
+---
+
+## Features
+
+- **Interactive Interface**: User-friendly menu system with colorful prompts and ASCII art banners.
+- **Dynamic Stress Testing**:
+  - Configure the number of concurrent processes.
+  - Set request rates and durations.
+- **Payload Customization**: Use custom payloads for realistic testing scenarios.
+- **Automatic Cooldown**: Detect unresponsive servers and trigger cooldowns.
+- **Random Delays**: Simulate real-world browsing patterns.
+- **Dark-Themed Graphs**: Generate visually appealing performance graphs.
+- **Detailed Reports**:
+  - Generates text-based and HTML reports.
+  - Includes latency, throughput, and success rate metrics.
+  - Visualizes performance with latency/throughput graphs.
+
+---
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ultimate-nuclear-stress-tester.git
+   cd ultimate-nuclear-stress-tester
+   ```
+
+2. Install dependencies:
+   ```bash
+   sudo apt update
+   sudo apt install -y curl wget unzip golang-go pv gnuplot sendemail libnet-ssleay-perl libio-socket-ssl-perl
+   ```
+
+3. Set up the Go environment:
+   ```bash
+   echo "export PATH=$PATH:$(go env GOPATH)/bin" >> ~/.bashrc
+   source ~/.bashrc
+   ```
+
+4. Install Vegeta:
+   ```bash
+   go install github.com/tsenart/vegeta@latest
+   ```
+
+5. Make the script executable:
+   ```bash
+   chmod +x ultimate-nuclear-stress-tester.sh
+   ```
+
+6. Run the script:
+   ```bash
+   ./ultimate-nuclear-stress-tester.sh
+   ```
+
+---
+
+## Usage
+
+1. Start the script:
+   ```bash
+   ./ultimate-nuclear-stress-tester.sh
+   ```
+
+2. Follow the interactive prompts to:
+   - Specify the target URL.
+   - Configure the number of processes, request rates, and duration.
+   - Analyze the generated reports (e.g., `final_vegeta_report.txt`, `final_plot.png`).
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Author
+
+- **Kasau** | Enhanced by KASAU
